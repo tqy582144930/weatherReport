@@ -56,67 +56,51 @@
         [_scrollView addSubview:_timeLabel8];
         
         _temperatureLabel1 = [[UILabel alloc] init];
-        _temperatureLabel1.backgroundColor = [UIColor redColor];
         [_scrollView addSubview:_temperatureLabel1];
         
         _temperatureLabel2 = [[UILabel alloc] init];
-        _temperatureLabel2.backgroundColor = [UIColor redColor];
         [_scrollView addSubview:_temperatureLabel2];
         
         _temperatureLabel3 = [[UILabel alloc] init];
-        _temperatureLabel3.backgroundColor = [UIColor redColor];
         [_scrollView addSubview:_temperatureLabel3];
         
         _temperatureLabel4 = [[UILabel alloc] init];
-        _temperatureLabel4.backgroundColor = [UIColor redColor];
         [_scrollView addSubview:_temperatureLabel4];
         
         _temperatureLabel5 = [[UILabel alloc] init];
-        _temperatureLabel5.backgroundColor = [UIColor redColor];
         [_scrollView addSubview:_temperatureLabel5];
         
         _temperatureLabel6 = [[UILabel alloc] init];
-        _temperatureLabel6.backgroundColor = [UIColor redColor];
         [_scrollView addSubview:_temperatureLabel6];
         
         _temperatureLabel7 = [[UILabel alloc] init];
-        _temperatureLabel7.backgroundColor = [UIColor redColor];
         [_scrollView addSubview:_temperatureLabel7];
         
         _temperatureLabel8 = [[UILabel alloc] init];
-        _temperatureLabel8.backgroundColor = [UIColor redColor];
         [_scrollView addSubview:_temperatureLabel8];
         
         _weatherImageView1 = [[UIImageView alloc] init];
-        _weatherImageView1.backgroundColor = [UIColor redColor];
         [_scrollView addSubview:_weatherImageView1];
         
         _weatherImageView2 = [[UIImageView alloc] init];
-        _weatherImageView2.backgroundColor = [UIColor redColor];
         [_scrollView addSubview:_weatherImageView2];
         
         _weatherImageView3 = [[UIImageView alloc] init];
-        _weatherImageView3.backgroundColor = [UIColor redColor];
         [_scrollView addSubview:_weatherImageView3];
         
         _weatherImageView4 = [[UIImageView alloc] init];
-        _weatherImageView4.backgroundColor = [UIColor redColor];
         [_scrollView addSubview:_weatherImageView4];
         
         _weatherImageView5 = [[UIImageView alloc] init];
-        _weatherImageView5.backgroundColor = [UIColor redColor];
         [_scrollView addSubview:_weatherImageView5];
         
         _weatherImageView6 = [[UIImageView alloc] init];
-        _weatherImageView6.backgroundColor = [UIColor redColor];
         [_scrollView addSubview:_weatherImageView6];
         
         _weatherImageView7 = [[UIImageView alloc] init];
-        _weatherImageView7.backgroundColor = [UIColor redColor];
         [_scrollView addSubview:_weatherImageView7];
         
         _weatherImageView8 = [[UIImageView alloc] init];
-        _weatherImageView8.backgroundColor = [UIColor redColor];
         [_scrollView addSubview:_weatherImageView8];
         
     }

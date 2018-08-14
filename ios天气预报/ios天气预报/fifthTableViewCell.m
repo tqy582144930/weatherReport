@@ -15,17 +15,23 @@
     self = [super initWithStyle:style  reuseIdentifier:reuseIdentifier];
     if (self) {
         _firstLabel = [[UILabel alloc] init];
+        _firstLabel.textColor = [UIColor whiteColor];
+        _firstLabel.font = [UIFont systemFontOfSize:14];
         [self.contentView addSubview:_firstLabel];
         
         _secondLabel = [[UILabel alloc] init];
+        _secondLabel.textColor = [UIColor whiteColor];
+        _secondLabel.font = [UIFont systemFontOfSize:14];
         [self.contentView addSubview:_secondLabel];
         
         _thridLabel = [[UILabel alloc] init];
-        _thridLabel.backgroundColor = [UIColor redColor];
+        _thridLabel.textColor = [UIColor whiteColor];
+        _thridLabel.font = [UIFont systemFontOfSize:35];
         [self.contentView addSubview:_thridLabel];
         
         _fourthLabel = [[UILabel alloc] init];
-        _fourthLabel.backgroundColor = [UIColor redColor];
+        _fourthLabel.textColor = [UIColor whiteColor];
+        _fourthLabel.font = [UIFont systemFontOfSize:35];
         [self.contentView addSubview:_fourthLabel];
     }
     return self;

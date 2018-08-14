@@ -9,5 +9,13 @@
 #import <UIKit/UIKit.h>
 
 @interface cityViewController : UIViewController
+<UITableViewDelegate,
+UITableViewDataSource,
+UISearchResultsUpdating,
+UISearchControllerDelegate>
+@property (nonatomic, strong) NSMutableArray *citiesMutableArray;
+@property (nonatomic, strong) UISearchController *searchController;
+@property (nonatomic, strong) NSMutableArray *searchList;
+@property (nonatomic, strong) UITableView *tableView;
 
 @end

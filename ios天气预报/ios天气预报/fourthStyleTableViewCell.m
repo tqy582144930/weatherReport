@@ -15,14 +15,16 @@
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
         _nameLabel = [[UILabel alloc] init];
-        _nameLabel.backgroundColor = [UIColor redColor];
+        _nameLabel.font = [UIFont systemFontOfSize:20];
+        _nameLabel.textColor = [UIColor whiteColor];
+        _nameLabel.numberOfLines = 0;
         [self.contentView addSubview:_nameLabel];
     }
     return self;
 }
 
 - (void) layoutSubviews {
-    _nameLabel.frame = CGRectMake(15, 10, 300, 25);
+    _nameLabel.frame = CGRectMake(15, 10, 400, 60);
 }
 - (void)awakeFromNib {
     [super awakeFromNib];

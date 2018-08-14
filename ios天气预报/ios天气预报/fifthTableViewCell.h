@@ -13,5 +13,4 @@
 @property (nonatomic, strong) UILabel *secondLabel;
 @property (nonatomic, strong) UILabel *thridLabel;
 @property (nonatomic, strong) UILabel *fourthLabel;
-
 @end

@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "homePageViewController.h"
+#import "cityViewController.h"
 
 @interface AppDelegate ()
 
@@ -20,7 +21,8 @@
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     [self.window makeKeyAndVisible];
-    homePageViewController *rootViewController = [[homePageViewController alloc] init];
+//    homePageViewController *rootViewController = [[homePageViewController alloc] init];
+    cityViewController *rootViewController = [[cityViewController alloc] init];
     self.window.rootViewController = rootViewController;
     return YES;
 }

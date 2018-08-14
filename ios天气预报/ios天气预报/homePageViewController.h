@@ -7,10 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FirstModel.h"
+#import "FifthModel.h"
 
 @interface homePageViewController : UIViewController
 <UITableViewDelegate,
 UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, retain) FirstModel *firstData;
+@property (nonatomic, retain) FifthModel *fifthData;
+@property (nonatomic, strong) NSArray *maxTempArray;
+@property (nonatomic, strong) NSArray *minTempArray;
+@property (nonatomic, strong) NSArray *dayArray;
+@property (nonatomic, strong) NSString *remindString;
 
 @end

@@ -15,19 +15,21 @@
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
         _dayLabel = [[UILabel alloc] init];
-        _dayLabel.backgroundColor = [UIColor redColor];
+        _dayLabel.textColor = [UIColor whiteColor];
+        _dayLabel.font = [UIFont systemFontOfSize:22];
         [self.contentView addSubview:_dayLabel];
         
         _maxTemperatureLabel = [[UILabel alloc] init];
-        _maxTemperatureLabel.backgroundColor = [UIColor redColor];
+        _maxTemperatureLabel.textColor = [UIColor whiteColor];
+        _maxTemperatureLabel.font = [UIFont systemFontOfSize:20];
         [self.contentView addSubview:_maxTemperatureLabel];
         
         _minTemperatureLabel = [[UILabel alloc] init];
-        _minTemperatureLabel.backgroundColor = [UIColor redColor];
+        _minTemperatureLabel.textColor = [UIColor whiteColor];
+        _minTemperatureLabel.font = [UIFont systemFontOfSize:20];
         [self.contentView addSubview:_minTemperatureLabel];
         
         _weatherImageView = [[UIImageView alloc] init];
-        _weatherImageView.backgroundColor = [UIColor redColor];
         [self.contentView addSubview:_weatherImageView];
         
     }
@@ -36,9 +38,9 @@
 
 - (void) layoutSubviews {
     [super layoutSubviews];
-    _dayLabel.frame = CGRectMake(15, 10, 80, 25);
-    _minTemperatureLabel.frame = CGRectMake(380, 10, 30, 25);
-    _maxTemperatureLabel.frame = CGRectMake(350, 10, 30, 25);
+    _dayLabel.frame = CGRectMake(15, 10, 120, 35);
+    _minTemperatureLabel.frame = CGRectMake(380, 10, 30, 30);
+    _maxTemperatureLabel.frame = CGRectMake(335, 10, 30, 30);
     _weatherImageView.frame = CGRectMake(200, 10, 25, 25);
     
 }
