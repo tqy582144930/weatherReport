@@ -7,9 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "homePageView.h"
 
-@interface ViewController : UIViewController
 
+@interface ViewController : UIViewController <homePageViewController, UIScrollViewDelegate>
+@property (nonatomic, strong) UIScrollView *scrollView;
+@property (nonatomic, retain) UIPageControl *pageControl;
+@property (nonatomic, strong) NSString *findCityString;
+@property (nonatomic, strong) NSMutableArray *allCitiesMutableArray;
 
 @end
 

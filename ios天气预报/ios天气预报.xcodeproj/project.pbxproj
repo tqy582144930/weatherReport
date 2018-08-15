@@ -41,6 +41,8 @@
 		91305A8A2122BF6600349D19 /* 飓风.png in Resources */ = {isa = PBXBuildFile; fileRef = 91305A6A2122BF6600349D19 /* 飓风.png */; };
 		91305A8B2122BF6600349D19 /* 龙卷风.png in Resources */ = {isa = PBXBuildFile; fileRef = 91305A6B2122BF6600349D19 /* 龙卷风.png */; };
 		91305A912122C22000349D19 /* 天气预报背景图片.png in Resources */ = {isa = PBXBuildFile; fileRef = 91305A902122C22000349D19 /* 天气预报背景图片.png */; };
+		9134B0862123CE34003CB6DC /* homePageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9134B0852123CE34003CB6DC /* homePageView.m */; };
+		9134B08921240FF9003CB6DC /* homePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9134B08821240FF9003CB6DC /* homePageViewController.m */; };
 		91F7F2EF2121771000BDF5DF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F7F2EE2121771000BDF5DF /* AppDelegate.m */; };
 		91F7F2F22121771000BDF5DF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F7F2F12121771000BDF5DF /* ViewController.m */; };
 		91F7F2F52121771000BDF5DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91F7F2F32121771000BDF5DF /* Main.storyboard */; };
@@ -49,7 +51,6 @@
 		91F7F2FD2121771300BDF5DF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F7F2FC2121771300BDF5DF /* main.m */; };
 		91F7F3072121771400BDF5DF /* ios____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F7F3062121771400BDF5DF /* ios____Tests.m */; };
 		91F7F3122121771400BDF5DF /* ios____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F7F3112121771400BDF5DF /* ios____UITests.m */; };
-		91F7F321212177C200BDF5DF /* homePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F7F320212177C200BDF5DF /* homePageViewController.m */; };
 		91F7F32421217D3E00BDF5DF /* firstStyleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F7F32321217D3E00BDF5DF /* firstStyleTableViewCell.m */; };
 		91F7F32721217D4C00BDF5DF /* secondStyleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F7F32621217D4C00BDF5DF /* secondStyleTableViewCell.m */; };
 		91F7F32A21217D5F00BDF5DF /* thridStyleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F7F32921217D5F00BDF5DF /* thridStyleTableViewCell.m */; };
@@ -112,6 +113,10 @@
 		91305A6A2122BF6600349D19 /* 飓风.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "飓风.png"; sourceTree = "<group>"; };
 		91305A6B2122BF6600349D19 /* 龙卷风.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "龙卷风.png"; sourceTree = "<group>"; };
 		91305A902122C22000349D19 /* 天气预报背景图片.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "天气预报背景图片.png"; sourceTree = "<group>"; };
+		9134B0842123CE34003CB6DC /* homePageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = homePageView.h; sourceTree = "<group>"; };
+		9134B0852123CE34003CB6DC /* homePageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = homePageView.m; sourceTree = "<group>"; };
+		9134B08721240FF9003CB6DC /* homePageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = homePageViewController.h; sourceTree = "<group>"; };
+		9134B08821240FF9003CB6DC /* homePageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = homePageViewController.m; sourceTree = "<group>"; };
 		91F7F2EA2121771000BDF5DF /* ios天气预报.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios天气预报.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		91F7F2ED2121771000BDF5DF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		91F7F2EE2121771000BDF5DF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -128,8 +133,6 @@
 		91F7F30D2121771400BDF5DF /* ios天气预报UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios天气预报UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		91F7F3112121771400BDF5DF /* ios____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ios____UITests.m"; sourceTree = "<group>"; };
 		91F7F3132121771400BDF5DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		91F7F31F212177C200BDF5DF /* homePageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = homePageViewController.h; sourceTree = "<group>"; };
-		91F7F320212177C200BDF5DF /* homePageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = homePageViewController.m; sourceTree = "<group>"; };
 		91F7F32221217D3E00BDF5DF /* firstStyleTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = firstStyleTableViewCell.h; sourceTree = "<group>"; };
 		91F7F32321217D3E00BDF5DF /* firstStyleTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = firstStyleTableViewCell.m; sourceTree = "<group>"; };
 		91F7F32521217D4C00BDF5DF /* secondStyleTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = secondStyleTableViewCell.h; sourceTree = "<group>"; };
@@ -209,11 +212,47 @@
 			path = "../天气预报图片";
 			sourceTree = "<group>";
 		};
+		9134B0822123C68E003CB6DC /* 搜索城市 */ = {
+			isa = PBXGroup;
+			children = (
+				91F7F3392121BA7F00BDF5DF /* cityViewController.h */,
+				91F7F33A2121BA7F00BDF5DF /* cityViewController.m */,
+			);
+			path = "搜索城市";
+			sourceTree = "<group>";
+		};
+		9134B0832123C697003CB6DC /* 天气详情 */ = {
+			isa = PBXGroup;
+			children = (
+				9134B08721240FF9003CB6DC /* homePageViewController.h */,
+				9134B08821240FF9003CB6DC /* homePageViewController.m */,
+				9134B0842123CE34003CB6DC /* homePageView.h */,
+				9134B0852123CE34003CB6DC /* homePageView.m */,
+				91F7F32221217D3E00BDF5DF /* firstStyleTableViewCell.h */,
+				91F7F32321217D3E00BDF5DF /* firstStyleTableViewCell.m */,
+				91F7F32521217D4C00BDF5DF /* secondStyleTableViewCell.h */,
+				91F7F32621217D4C00BDF5DF /* secondStyleTableViewCell.m */,
+				91F7F32821217D5F00BDF5DF /* thridStyleTableViewCell.h */,
+				91F7F32921217D5F00BDF5DF /* thridStyleTableViewCell.m */,
+				91F7F32B21217D6B00BDF5DF /* fourthStyleTableViewCell.h */,
+				91F7F32C21217D6B00BDF5DF /* fourthStyleTableViewCell.m */,
+				91F7F32E2121AA2100BDF5DF /* fifthTableViewCell.h */,
+				91F7F32F2121AA2100BDF5DF /* fifthTableViewCell.m */,
+				91305A3A2122731D00349D19 /* FirstModel.h */,
+				91305A3B2122731D00349D19 /* FirstModel.m */,
+				91305A402122B05000349D19 /* FifthModel.h */,
+				91305A412122B05000349D19 /* FifthModel.m */,
+			);
+			path = "天气详情";
+			sourceTree = "<group>";
+		};
 		91F7F2E12121771000BDF5DF = {
 			isa = PBXGroup;
 			children = (
 				91305A4B2122BF6600349D19 /* 天气预报图片 */,
 				91F7F2EC2121771000BDF5DF /* ios天气预报 */,
+				9134B0832123C697003CB6DC /* 天气详情 */,
+				9134B0822123C68E003CB6DC /* 搜索城市 */,
 				91F7F3052121771400BDF5DF /* ios天气预报Tests */,
 				91F7F3102121771400BDF5DF /* ios天气预报UITests */,
 				91F7F2EB2121771000BDF5DF /* Products */,
@@ -242,24 +281,6 @@
 				91F7F2F82121771300BDF5DF /* LaunchScreen.storyboard */,
 				91F7F2FB2121771300BDF5DF /* Info.plist */,
 				91F7F2FC2121771300BDF5DF /* main.m */,
-				91F7F31F212177C200BDF5DF /* homePageViewController.h */,
-				91F7F320212177C200BDF5DF /* homePageViewController.m */,
-				91F7F32221217D3E00BDF5DF /* firstStyleTableViewCell.h */,
-				91F7F32321217D3E00BDF5DF /* firstStyleTableViewCell.m */,
-				91F7F32521217D4C00BDF5DF /* secondStyleTableViewCell.h */,
-				91F7F32621217D4C00BDF5DF /* secondStyleTableViewCell.m */,
-				91F7F32821217D5F00BDF5DF /* thridStyleTableViewCell.h */,
-				91F7F32921217D5F00BDF5DF /* thridStyleTableViewCell.m */,
-				91F7F32B21217D6B00BDF5DF /* fourthStyleTableViewCell.h */,
-				91F7F32C21217D6B00BDF5DF /* fourthStyleTableViewCell.m */,
-				91F7F32E2121AA2100BDF5DF /* fifthTableViewCell.h */,
-				91F7F32F2121AA2100BDF5DF /* fifthTableViewCell.m */,
-				91F7F3392121BA7F00BDF5DF /* cityViewController.h */,
-				91F7F33A2121BA7F00BDF5DF /* cityViewController.m */,
-				91305A3A2122731D00349D19 /* FirstModel.h */,
-				91305A3B2122731D00349D19 /* FirstModel.m */,
-				91305A402122B05000349D19 /* FifthModel.h */,
-				91305A412122B05000349D19 /* FifthModel.m */,
 			);
 			path = "ios天气预报";
 			sourceTree = "<group>";
@@ -444,7 +465,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91F7F321212177C200BDF5DF /* homePageViewController.m in Sources */,
 				91F7F33B2121BA7F00BDF5DF /* cityViewController.m in Sources */,
 				91F7F32D21217D6C00BDF5DF /* fourthStyleTableViewCell.m in Sources */,
 				91F7F32721217D4C00BDF5DF /* secondStyleTableViewCell.m in Sources */,
@@ -455,6 +475,8 @@
 				91305A3C2122731D00349D19 /* FirstModel.m in Sources */,
 				91305A422122B05000349D19 /* FifthModel.m in Sources */,
 				91F7F2EF2121771000BDF5DF /* AppDelegate.m in Sources */,
+				9134B0862123CE34003CB6DC /* homePageView.m in Sources */,
+				9134B08921240FF9003CB6DC /* homePageViewController.m in Sources */,
 				91F7F32421217D3E00BDF5DF /* firstStyleTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
