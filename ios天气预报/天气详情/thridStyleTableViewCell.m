@@ -41,7 +41,7 @@
     _dayLabel.frame = CGRectMake(15, 10, 120, 35);
     _minTemperatureLabel.frame = CGRectMake(380, 10, 30, 30);
     _maxTemperatureLabel.frame = CGRectMake(335, 10, 30, 30);
-    _weatherImageView.frame = CGRectMake(200, 10, 25, 25);
+    _weatherImageView.frame = CGRectMake(200, 10, 30, 30);
     
 }
 

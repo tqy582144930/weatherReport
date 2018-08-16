@@ -18,8 +18,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor whiteColor];
+    UIImageView *backImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"天气预报背景图1"]];
+    backImageView.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height);
+    [self.view addSubview:backImageView];
+    
     _tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
+    _tableView.backgroundColor = [UIColor clearColor];
     _tableView.delegate = self;
     _tableView.dataSource = self;
     
@@ -31,19 +35,50 @@
     _searchController.searchBar.frame = CGRectMake(0, 0, 100, 44.0);
     [_searchController.searchBar sizeToFit];
     _searchController.searchBar.showsCancelButton = NO;
-//    _searchController.searchBar.showsCancelButton = true;
-//    UIButton *cancelBtn = [_searchController.searchBar valueForKeyPath:@"cancelButton"];
-//
-//    cancelBtn.enabled = YES;
-//    [cancelBtn setTitle:@"取消" forState:UIControlStateNormal];
-//    [cancelBtn addTarget:self action:@selector(cancelButtonClicked) forControlEvents:UIControlEventTouchUpInside];
-    
+    _searchController.searchBar.showsCancelButton = true;
+    UIButton *cancelBtn = [_searchController.searchBar valueForKeyPath:@"cancelButton"];
+
+    cancelBtn.enabled = YES;
+    [cancelBtn setTitle:@"取消" forState:UIControlStateNormal];
+    cancelBtn.tintColor = [UIColor blackColor];
+    [cancelBtn addTarget:self action:@selector(cancelButtonClicked) forControlEvents:UIControlEventTouchUpInside];
+
     _searchController.searchBar.backgroundColor = [UIColor clearColor];
     _searchController.searchBar.placeholder = @"输入查询城市";
     self.tableView.tableHeaderView  = self.searchController.searchBar;
     
     [self.view addSubview:_tableView];
+    float version = [[[UIDevice currentDevice] systemVersion] floatValue];
+    
+    if (version == 7.0) {
+        _searchController.searchBar.backgroundColor = [UIColor clearColor];
+        _searchController.searchBar.barTintColor = [UIColor clearColor];
+        
+    }else{
+        for(int i =  0 ;i < _searchController.searchBar.subviews.count;i++){
+            UIView * backView = _searchController.searchBar.subviews[i];
+            if ([backView isKindOfClass:NSClassFromString(@"UISearchBarBackground")] == YES) {
+                [backView removeFromSuperview];
+                [_searchController.searchBar setBackgroundColor:[UIColor clearColor]];
+                
+                break;
+            }else{
+                NSArray * arr = _searchController.searchBar.subviews[i].subviews;
+                for(int j = 0;j<arr.count;j++   ){
+                    UIView * barView = arr[i];
+                    if ([barView isKindOfClass:NSClassFromString(@"UISearchBarBackground")] == YES) {
+                        
+                        [barView removeFromSuperview];
+                        [_searchController.searchBar setBackgroundColor:[UIColor clearColor]];
+                        
+                        break;
+                    }
+                }
+            }
+        }
+    }
 }
+
 
 - (void) cancelButtonClicked {
     [self dismissViewControllerAnimated:YES completion:nil ];
@@ -64,6 +99,9 @@
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:dentifier];
     }
+    cell.backgroundColor = [UIColor clearColor];
+    cell.textLabel.textColor = [UIColor blackColor];
+    cell.textLabel.font = [UIFont systemFontOfSize:18];
     [cell.textLabel setText:self.citiesMutableArray[indexPath.row]];
     return cell;
 }

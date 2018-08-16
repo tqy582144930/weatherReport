@@ -17,16 +17,19 @@
         _locationLabel = [[UILabel alloc] init];
         _locationLabel.font = [UIFont systemFontOfSize:35];
         _locationLabel.textColor = [UIColor whiteColor];
+        _locationLabel.textAlignment = NSTextAlignmentCenter;
         [self.contentView addSubview:_locationLabel];
         
         _weatherLabel = [[UILabel alloc] init];
         _weatherLabel.font = [UIFont systemFontOfSize:20];
         _weatherLabel.textColor = [UIColor whiteColor];
+        _weatherLabel.textAlignment = NSTextAlignmentCenter;
         [self.contentView addSubview:_weatherLabel];
 
         _nowTemperatureLabel = [[UILabel alloc] init];
         _nowTemperatureLabel.font = [UIFont systemFontOfSize:90];
         _nowTemperatureLabel.textColor = [UIColor whiteColor];
+        _nowTemperatureLabel.textAlignment = NSTextAlignmentCenter;
         [self.contentView addSubview:_nowTemperatureLabel];
 
         _whatDayLabel = [[UILabel alloc] init];
@@ -55,11 +58,11 @@
 
 - (void) layoutSubviews {
     [super layoutSubviews];
-    _locationLabel.frame = CGRectMake(170, 50, 80, 30);
-    _weatherLabel.frame = CGRectMake(180, 85, 80, 30);
-    _nowTemperatureLabel.frame = CGRectMake(145, 115, 120, 120);
-    _whatDayLabel.frame = CGRectMake(15, 255, 120, 40);
-    _dayLabel.frame = CGRectMake(145, 262, 40, 30);
+    _locationLabel.frame = CGRectMake(145, 50, 120, 30);
+    _weatherLabel.frame = CGRectMake(165, 85, 80, 30);
+    _nowTemperatureLabel.frame = CGRectMake(145, 115, 150, 150);
+    _whatDayLabel.frame = CGRectMake(15, 255, 80, 40);
+    _dayLabel.frame = CGRectMake(85, 262, 40, 30);
     _maxTemperatureLable.frame = CGRectMake(335, 260, 30, 30);
     _minTemperatureLable.frame = CGRectMake(380, 260, 30, 30);
 }

@@ -24,7 +24,7 @@
 }
 
 - (void) layoutSubviews {
-    _nameLabel.frame = CGRectMake(15, 10, 400, 60);
+    _nameLabel.frame = CGRectMake(15, 10, 400, 80);
 }
 - (void)awakeFromNib {
     [super awakeFromNib];

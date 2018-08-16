@@ -38,7 +38,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    UIImageView *backImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"天气预报背景图片"]];
+    UIImageView *backImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"天气预报背景图3"]];
     backImageView.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height);
     [self.view addSubview:backImageView];
     _allCitiesMutableArray = [[NSMutableArray alloc] init];
@@ -61,7 +61,7 @@
     [self.view addSubview:_scrollView];
     
     
-    homePageView *nextViewController = [[homePageView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height-49) andCityName:@"xianshi"];
+    homePageView *nextViewController = [[homePageView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height-49) andCityName:@"西安市"];
     [_scrollView addSubview:nextViewController];
     
     _pageControl = [[UIPageControl alloc] initWithFrame:CGRectMake(100, 700, 200, 30)];

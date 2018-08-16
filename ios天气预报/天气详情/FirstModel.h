@@ -13,7 +13,6 @@
 @property (nonatomic, strong) NSString *weatherString;
 @property (nonatomic, strong) NSString *nowTemperatureString;
 @property (nonatomic, strong) NSString *whatDayString;
-@property (nonatomic, strong) NSString *dayString;
 @property (nonatomic, strong) NSString *maxTemperatureString;
 @property (nonatomic, strong) NSString *minTemperatureString;
 @end

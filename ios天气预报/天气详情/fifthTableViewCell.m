@@ -41,8 +41,8 @@
     [super layoutSubviews];
     _firstLabel.frame = CGRectMake(15, 10, 80, 20);
     _secondLabel.frame = CGRectMake(200, 10, 90, 20);
-    _thridLabel.frame = CGRectMake(15, 35, 150, 25);
-    _fourthLabel.frame = CGRectMake(200, 35, 150, 25);
+    _thridLabel.frame = CGRectMake(15, 35, 180, 25);
+    _fourthLabel.frame = CGRectMake(200, 35, 180, 25);
 }
 
 - (void)awakeFromNib {
